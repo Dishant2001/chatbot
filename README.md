@@ -1,0 +1,1 @@
+Induction Chatbot implemented using NLP and Deep Learning Artificial Neural Networks. This bot answers basic queries regarding college facilities, library, sports, college routes, location, and much more! Chatbot was made as an Internship project for the college website, to help visitors/students to know about the college on the website itself, by using this chatbot named InBOT
