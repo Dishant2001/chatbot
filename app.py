@@ -14,20 +14,20 @@ from flask import Flask,render_template,request,url_for
 # from flask.templating import 
 # from flask.wrappers import request
 
-print(nltk.download('stopwords'))
-print(nltk.download('wordnet'))
+#print(nltk.download('stopwords'))
+#print(nltk.download('wordnet'))
 
 print("Started")
 
-model=models.load_model('E:\VSCode\ChatBot\chatbot\\files\model\Induction_Chatbot_6.model')
+model=models.load_model('files\model\Induction_Chatbot_6.model')
 feature_indices_dict={}
-with open('E:\VSCode\ChatBot\chatbot\\files\model\\feature_indices_3.txt','rb') as f:
+with open('files\model\\feature_indices_3.txt','rb') as f:
   feature_indices_dict=pickle.load(f)
 answers=[]
-with open('E:\VSCode\ChatBot\chatbot\\files\model\\answers_3.txt','rb') as f:
+with open('files\model\\answers_3.txt','rb') as f:
   answers=pickle.load(f)
 bot_responses=[]
-with open('E:\VSCode\ChatBot\chatbot\\files\model\\bot_responses_3.txt','rb') as f:
+with open('files\model\\bot_responses_3.txt','rb') as f:
   bot_responses=pickle.load(f)
 
 
